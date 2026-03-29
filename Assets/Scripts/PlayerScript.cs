@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -17,7 +18,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float maxJumpImpulse;
     [SerializeField] private float jumpImpulse;
-    [SerializeField] private bool isOnGround = false;
+    [SerializeField] private bool isOnGround;
     [SerializeField] private PlayerRecollection cc;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,6 +27,7 @@ public class PlayerScript : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         maxSpeed = speed;
         maxJumpImpulse = jumpImpulse;
+        isOnGround = true;
     }
 
     // Update is called once per frame
@@ -58,25 +60,18 @@ public class PlayerScript : MonoBehaviour
         if (isOnGround)
         {
             rb2d.AddForce(Vector2.up * jumpImpulse, ForceMode2D.Impulse);
+            isOnGround = false;
+            StartCoroutine(SaltoCd());
         }
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    IEnumerator SaltoCd()
     {
-        if(collision.gameObject.tag == "Ground")
-        {
-            isOnGround = true;
-        }
+        yield return new WaitForSeconds(1);
+        isOnGround = true;
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Ground")
-        {
-            isOnGround = false;
-        }   
-    }
 
     private void coinCounterCheck()
     {
