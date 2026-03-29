@@ -1,42 +1,50 @@
-using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerScript : MonoBehaviour
 {
-
     [Header("InputReferences")]
     [SerializeField] private InputActionReference movement;
     [SerializeField] private InputActionReference jump;
 
-    [Header("Variables")]
-    [SerializeField] private Vector2 dir;
+    [Header("Movimiento")]
     [SerializeField] private Rigidbody2D rb2d;
-    [SerializeField] private float maxSpeed;
     [SerializeField] private float speed;
-    [SerializeField] private float maxJumpImpulse;
     [SerializeField] private float jumpImpulse;
-    [SerializeField] private bool isOnGround;
-    [SerializeField] private PlayerRecollection cc;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private float baseSpeed;
+    private float baseJump;
+
+    [Header("Suelo")]
+    [SerializeField] private bool isOnGround;
+
+    [Header("Comida")]
+    [SerializeField] private PlayerRecollection cc;
+    [SerializeField] private int foodPerLevel = 10; // configurable
+    [SerializeField] private int currentLevel = 0;  // 0 a 3
+
+    [Header("Multiplicadores por nivel (4 fases)")]
+    [SerializeField] private float[] speedMultiplier = { 1f, 0.8f, 0.6f, 0.4f };
+    [SerializeField] private float[] jumpMultiplier = { 1f, 0.85f, 0.7f, 0.5f };
+
+    [Header("Animación")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private string animParameter = "FatLevel";
+
+    private void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        maxSpeed = speed;
-        maxJumpImpulse = jumpImpulse;
+        baseSpeed = speed;
+        baseJump = jumpImpulse;
         isOnGround = true;
+
+        ApplyLevel();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        dir = movement.action.ReadValue<Vector2>();
-        coinCounterCheck();
-
-        
+        CheckFoodProgress();
     }
 
     private void FixedUpdate()
@@ -47,7 +55,6 @@ public class PlayerScript : MonoBehaviour
     private void OnEnable()
     {
         jump.action.started += Jump;
-
     }
 
     private void OnDisable()
@@ -63,7 +70,6 @@ public class PlayerScript : MonoBehaviour
             isOnGround = false;
             StartCoroutine(SaltoCd());
         }
-        
     }
 
     IEnumerator SaltoCd()
@@ -72,21 +78,28 @@ public class PlayerScript : MonoBehaviour
         isOnGround = true;
     }
 
-
-    private void coinCounterCheck()
+    private void CheckFoodProgress()
     {
-        if (cc.coincounter == 10)
+        if (cc.coincounter >= foodPerLevel)
         {
-            SpeedReduction();
             cc.coincounter = 0;
+
+            if (currentLevel < 3) 
+            {
+                currentLevel++;
+                ApplyLevel();
+            }
         }
     }
 
-    private void SpeedReduction()
+    private void ApplyLevel()
     {
-        speed -= maxSpeed * 0.25f;
-        jumpImpulse -= maxJumpImpulse * 0.30f;
+        speed = baseSpeed * speedMultiplier[currentLevel];
+        jumpImpulse = baseJump * jumpMultiplier[currentLevel];
+
+        if (animator != null)
+        {
+            animator.SetInteger(animParameter, currentLevel);
+        }
     }
-
-
 }
