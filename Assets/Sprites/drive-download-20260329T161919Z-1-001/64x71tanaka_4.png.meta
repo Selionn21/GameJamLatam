@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: f0519db6a471a734ba9e1df240170283
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -103511482554812923
+    second: 64x71tanaka_4_0
+  - first:
+      213: -2293643337830795796
+    second: 64x71tanaka_4_1
+  - first:
+      213: -1552804768406729640
+    second: 64x71tanaka_4_2
+  - first:
+      213: -5382956053300275781
+    second: 64x71tanaka_4_3
+  - first:
+      213: -2518993940490071843
+    second: 64x71tanaka_4_4
+  - first:
+      213: -2804955604404834407
+    second: 64x71tanaka_4_5
+  - first:
+      213: -4814763688631310761
+    second: 64x71tanaka_4_6
+  - first:
+      213: 3786708297448111880
+    second: 64x71tanaka_4_7
+  - first:
+      213: 6059672479591988819
+    second: 64x71tanaka_4_8
+  - first:
+      213: 1360244890584153945
+    second: 64x71tanaka_4_9
+  - first:
+      213: 970994882049746501
+    second: 64x71tanaka_4_10
+  - first:
+      213: 7332315455292077366
+    second: 64x71tanaka_4_11
+  - first:
+      213: -5745051909632410809
+    second: 64x71tanaka_4_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 64x71tanaka_4_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5067524ead0409ef0800000000000000
+      internalID: -103511482554812923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 3
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5772759875b20e0800000000000000
+      internalID: -2293643337830795796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 5
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c859d4a44537ae0800000000000000
+      internalID: -1552804768406729640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 5
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb59f795df5eb45b0800000000000000
+      internalID: -5382956053300275781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_4
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 5
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd05ab97b5cba0dd0800000000000000
+      internalID: -2518993940490071843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_5
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 5
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f65b43dbbc219d0800000000000000
+      internalID: -2804955604404834407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_6
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 2
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7566ea55fe58e2db0800000000000000
+      internalID: -4814763688631310761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_7
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 5
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f3b6932271d8430800000000000000
+      internalID: 3786708297448111880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 5
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e7a41c308481450800000000000000
+      internalID: 6059672479591988819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_9
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 5
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ffec6658f80e210800000000000000
+      internalID: 1360244890584153945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_10
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 5
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5462c4f53baa97d00800000000000000
+      internalID: 970994882049746501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_11
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 5
+        width: 53
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6357acdee0e91c560800000000000000
+      internalID: 7332315455292077366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 64x71tanaka_4_12
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 3
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74b3e2e0ab97540b0800000000000000
+      internalID: -5745051909632410809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      64x71tanaka_4_0: -103511482554812923
+      64x71tanaka_4_1: -2293643337830795796
+      64x71tanaka_4_10: 970994882049746501
+      64x71tanaka_4_11: 7332315455292077366
+      64x71tanaka_4_12: -5745051909632410809
+      64x71tanaka_4_2: -1552804768406729640
+      64x71tanaka_4_3: -5382956053300275781
+      64x71tanaka_4_4: -2518993940490071843
+      64x71tanaka_4_5: -2804955604404834407
+      64x71tanaka_4_6: -4814763688631310761
+      64x71tanaka_4_7: 3786708297448111880
+      64x71tanaka_4_8: 6059672479591988819
+      64x71tanaka_4_9: 1360244890584153945
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
