@@ -34,9 +34,7 @@ public class MainMenu : MonoBehaviour
 
     public void Retry()
     {
-
         SceneManager.LoadScene("TanakaRunner");
-
     }
 
     public void QuitGame()
