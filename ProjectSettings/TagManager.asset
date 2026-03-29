@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Coin
+  - coin
+  - hazard
   layers:
   - Default
   - TransparentFX

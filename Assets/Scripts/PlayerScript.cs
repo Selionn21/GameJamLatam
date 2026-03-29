@@ -4,6 +4,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerScript : MonoBehaviour
 {
+    [Header("UI")]
+    [SerializeField] private GameObject winCanvas;
+    private bool hasWon = false;
+    [SerializeField] private GameObject loseCanvas;
+    private bool hasLost = false;
+
+
     [Header("InputReferences")]
     [SerializeField] private InputActionReference movement;
     [SerializeField] private InputActionReference jump;
@@ -21,8 +28,8 @@ public class PlayerScript : MonoBehaviour
 
     [Header("Comida")]
     [SerializeField] private PlayerRecollection cc;
-    [SerializeField] private int foodPerLevel = 10; // configurable
-    [SerializeField] private int currentLevel = 0;  // 0 a 3
+    [SerializeField] private int foodPerLevel = 5;
+    [SerializeField] private int currentLevel = 0;  
 
     [Header("Multiplicadores por nivel (4 fases)")]
     [SerializeField] private float[] speedMultiplier = { 1f, 0.8f, 0.6f, 0.4f };
@@ -84,12 +91,46 @@ public class PlayerScript : MonoBehaviour
         {
             cc.coincounter = 0;
 
-            if (currentLevel < 3) 
+            if (currentLevel < 3)
             {
                 currentLevel++;
                 ApplyLevel();
+
+                if (currentLevel == 3 && !hasWon)
+                {
+                    WinGame();
+                }
             }
         }
+    }
+    private void WinGame()
+    {
+        hasWon = true;
+
+        if (winCanvas != null)
+            winCanvas.SetActive(true);
+
+        Time.timeScale = 0f;
+
+        rb2d.linearVelocity = Vector2.zero;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("hazard") && !hasLost)
+        {
+            LoseGame();
+        }
+    }
+    private void LoseGame()
+    {
+        hasLost = true;
+
+        if (loseCanvas != null)
+            loseCanvas.SetActive(true);
+
+        Time.timeScale = 0f;
+        rb2d.linearVelocity = Vector2.zero;
     }
 
     private void ApplyLevel()

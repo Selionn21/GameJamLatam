@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3253308336608966792}
   - component: {fileID: 6552209600889415534}
   m_Layer: 0
-  m_Name: Hamburguesa
+  m_Name: Brocoli
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.625}
+    oldSize: {x: 0.59375, y: 0.65625}
     newSize: {x: 1, y: 0.625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -128,7 +128,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 23
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -7857017147718215899, guid: 0f6b3388154f74e4eb8bae5a57e79524, type: 3}
+  m_Sprite: {fileID: -4211191486744624264, guid: 886b4064a1608cc46b2470a91b397763, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
