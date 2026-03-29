@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -29,6 +30,13 @@ public class MainMenu : MonoBehaviour
     {
         creditsPanel.SetActive(false);
         mainPanel.SetActive(true);
+    }
+
+    public void Retry()
+    {
+
+        SceneManager.GetActiveScene();
+
     }
 
     public void QuitGame()
