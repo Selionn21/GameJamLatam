@@ -41,7 +41,7 @@ public class PlayerScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb2d.linearVelocity = new Vector2(dir.x * speed, rb2d.linearVelocity.y);
+        rb2d.linearVelocity = new Vector2(speed, rb2d.linearVelocity.y);
     }
 
     private void OnEnable()
