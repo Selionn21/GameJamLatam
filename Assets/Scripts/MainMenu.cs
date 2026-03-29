@@ -35,7 +35,7 @@ public class MainMenu : MonoBehaviour
     public void Retry()
     {
 
-        SceneManager.GetActiveScene();
+        SceneManager.LoadScene("TanakaRunner");
 
     }
 
