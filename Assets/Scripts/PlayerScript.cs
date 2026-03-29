@@ -75,10 +75,19 @@ public class PlayerScript : MonoBehaviour
 
     private void coinCounterCheck()
     {
-        if (cc.coincounter == 10)
+        if (cc.coincounter == 5)
         {
             SpeedReduction();
             cc.coincounter = 0;
+        }
+    }
+
+    private void HealthycoinCounterCheck()
+    {
+        if(hcc.coinCounter == 6)
+        {
+            FatReduction();
+            hcc.coinCounter = 0;
         }
     }
 

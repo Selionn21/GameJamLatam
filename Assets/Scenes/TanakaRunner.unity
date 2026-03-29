@@ -571,7 +571,7 @@ MonoBehaviour:
   maxSpeed: 0
   speed: 6
   maxJumpImpulse: 0
-  jumpImpulse: 10
+  jumpImpulse: 6.5
   isOnGround: 0
   cc: {fileID: 1716977677}
 --- !u!70 &1716977679

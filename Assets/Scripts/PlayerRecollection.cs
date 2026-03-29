@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PlayerRecollection : MonoBehaviour
 {
-    public int playercoins = 0;
-    public bool hasCoins = false;
+   
     public int coincounter = 0;
+    public int hcoinCounter = 0;
     
 
 
@@ -20,18 +20,8 @@ public class PlayerRecollection : MonoBehaviour
         
     }
 
-    public void CollectCoins()
-    {
-        playercoins++;
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag == "coin")
-        {
-            coincounter++;
-        }
-    }
+
 
 
 }
